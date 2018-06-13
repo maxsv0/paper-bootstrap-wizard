@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+
+<config>
+    <param name="activationUrl" value="/wizard/"/>
+    <param name="activationLevel" value="10"/>
+    <param name="adminMenu" value="0"/>
+</config>
+
+
+<install>
+    <param name="name" value="paper-bootstrap-wizard" />
+    <param name="version" value="1.0.0"/>
+    <param name="date" value="13.06.2018"/>
+    <param name="title" value="Paper Bootstrap Wizard"/>
+    <param name="description" value="Material Bootstrap Wizard by Creative Tim v1.0.2"/>
+    <param name="tags" value="wizard,bootstrap"/>
+    <param name="author" value="max@msvhost.com"/>
+    <param name="preview" value="images/module_preview/paper_bootstrap_wizard.jpg"/>
+
+    <dependency module="msv-core" version="1.0" />
+
+    <file dir="module" path="paper-bootstrap-wizard/paper-bootstrap-wizard.php"/>
+    <file dir="module" path="paper-bootstrap-wizard/config.xml"/>
+    <file dir="content" path="css/paper-bootstrap-wizard.css"/>
+    <file dir="content" path="js/jquery.bootstrap.wizard.js"/>
+    <file dir="content" path="js/paper-bootstrap-wizard.js"/>
+    <file dir="template" path="default/paper-bootstrap-wizard.tpl"/>
+</install>
+</document>
