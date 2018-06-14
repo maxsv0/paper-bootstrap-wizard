@@ -2,19 +2,9 @@
 #
 # Module publishing tool for MSV Repository
 #
-# Module publishing settings:
-#   repositoryurl   - Repository URL. Default value: http://rep.msvhost.com/api/import/
-#   repositorykey   - is your developer key for accessing the repository. Default value: $1
-#                     NOTE! Do not hardcode repositorykey value. It can cause security issues.
-#   modulename      - is current module name. Default value: $2
-#   configinstall   - is a path to config.install.xml or config.xml of a current module
-#   previewfile     - is a path to module preview
-#
-#   ************* More information can be found here https://github.com/maxsv0/repository *************
-#
 repositoryurl=http://rep.msvhost.com/api/import/
-modulename=$1
-repositorykey=$2
+modulename=paper-bootstrap-wizard
+repositorykey=$1
 configinstall=src/module/$modulename/config.install.xml
 previewfile=src/content/images/module_preview/$modulename.jpg
 

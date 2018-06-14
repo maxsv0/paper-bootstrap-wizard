@@ -9,14 +9,17 @@
     <param name="tags" value="wizard,bootstrap"/>
     <param name="author" value="max@msvhost.com"/>
     <param name="preview" value="images/module_preview/paper_bootstrap_wizard.jpg"/>
+    <param name="installHook" value="Install_Paper_Bootstrap_Wizard"/>
 
-    <dependency module="msv-core" version="1.0" />
+    <dependency module="msv-core" version="1.5" />
+    <dependency module="validate" version="1.0" />
 
     <file dir="module" path="paper-bootstrap-wizard/paper-bootstrap-wizard.php"/>
     <file dir="module" path="paper-bootstrap-wizard/config.xml"/>
     <file dir="content" path="css/paper-bootstrap-wizard.css"/>
     <file dir="content" path="js/jquery.bootstrap.wizard.js"/>
     <file dir="content" path="js/paper-bootstrap-wizard.js"/>
-    <file dir="template" path="default/paper-bootstrap-wizard.tpl"/>
+    <file dir="template" path="default/wizard.tpl"/>
+    <file dir="template" path="default/wizard/paper-bootstrap-wizard.tpl"/>
 </install>
 </document>
