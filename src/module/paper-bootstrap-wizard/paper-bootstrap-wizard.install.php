@@ -6,7 +6,7 @@ function Install_Paper_Bootstrap_Wizard($module) {
         "url" => $module->activationUrl,
         "name" => "Paper Bootstrap Wizard",
         "template" => "custom",
-        "page_template" => "paper-bootstrap-wizard.tpl",
+        "page_template" => "wizard.tpl",
         "sitemap" => 1,
         "menu" => "top",
         "menu_order" => 10,
