@@ -49,6 +49,8 @@ $(document).ready(function(){
                 $validator.focusInvalid();
                 return false;
             }
+
+            $("html, body").animate({ scrollTop: 200 }, "fast");
         },
 
         onInit : function(tab, navigation, index){
