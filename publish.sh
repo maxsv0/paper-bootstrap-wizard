@@ -1,4 +1,7 @@
 #!/bin/bash
+set -e
+
+
 #
 # Module publishing tool for MSV Repository
 #
@@ -50,7 +53,13 @@ fi
 
 echo "========> Module: $modulename (key :  $repositorykey)"
 echo "Sending file to repository.."
-curl -F "file=@$modulename.zip" -F "preview=@$previewfile" -F "config=@$configinstall" -F "module=$modulename" -F "key=$repositorykey" $repositoryurl
+response=$(curl -F "file=@$modulename.zip" -F "preview=@$previewfile" -F "config=@$configinstall" -F "module=$modulename" -F "key=$repositorykey" $repositoryurl)
+echo $response
 
-#rm $modulename.zip
+if [[ $response = *"[ERROR]"* ]]; then
+    echo "[ERROR] has occurred"
+    exit 1
+fi
+
+echo "[SUCCESS] upload successfully!"
 exit 0
