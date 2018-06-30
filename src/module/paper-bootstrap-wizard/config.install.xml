@@ -2,8 +2,8 @@
 <document>
 <install>
     <param name="name" value="paper-bootstrap-wizard" />
-    <param name="version" value="1.0.3"/>
-    <param name="date" value="29.06.2018"/>
+    <param name="version" value="1.0.4"/>
+    <param name="date" value="20.06.2018"/>
     <param name="title" value="Paper Bootstrap Wizard"/>
     <param name="description" value="Material Bootstrap Wizard by Creative Tim v1.0.2"/>
     <param name="tags" value="wizard,bootstrap"/>
